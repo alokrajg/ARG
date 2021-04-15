@@ -3,9 +3,10 @@ toc: true
 layout: post
 description: A logical, reasonably standardized, but flexible project structure for doing and sharing data science work.
 categories: [data_science]
-title: This is the step by step procedure to setup any data science project.
+title: Data Science Workflow
 ---
-# Data Science Workflow
+# This is the step by step procedure to setup any data science project.
+![ds_project]({{site.baseurl}}/assets/image/ds_project.jpg "")
 
 ## Basic setup
 1. Install cookiecutter
