@@ -101,7 +101,7 @@ window.onload = wrap_img;
 </li>
 </ul><h1 id="this-is-the-step-by-step-procedure-to-setup-any-data-science-project">
 <a class="anchor" href="#this-is-the-step-by-step-procedure-to-setup-any-data-science-project" aria-hidden="true"><span class="octicon octicon-link"></span></a>This is the step by step procedure to setup any data science project.</h1>
-<p>![ds_project](/ARG/images/ds_project.jpg “”)</p>
+<p><img src="/ARG/images/ds_project.jpg" alt="ds_project" title=" "></p>
 
 <h2 id="basic-setup">
 <a class="anchor" href="#basic-setup" aria-hidden="true"><span class="octicon octicon-link"></span></a>Basic setup</h2>
@@ -119,12 +119,21 @@ window.onload = wrap_img;
   <li>
     <p>Create a virtual environment</p>
 
-    <p><code class="language-plaintext highlighter-rouge">pipenv shell</code></p>
+    <div class="language-plaintext highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code>conda create -n virtual-env-name python==3.8
+conda activate virtual-env-name
+</code></pre></div>    </div>
   </li>
   <li>
     <p>Install all the genearl packages for data science</p>
 
-    <p><code class="language-plaintext highlighter-rouge">pip install -r requirements.txt</code></p>
+    <p><code class="language-plaintext highlighter-rouge">conda install --file requirements.txt</code>
+or</p>
+
+    <div class="language-plaintext highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code>conda install pip
+pip install -r requirements.txt
+</code></pre></div>    </div>
   </li>
   <li>
     <p>Open jupyter lab for data exploration and analysis</p>
