@@ -11,11 +11,15 @@ title: Data Science Workflow
 ## Basic setup
 1. Install cookiecutter
 
-   ```pip install cookiecutter```
+   ```
+   pip install cookiecutter
+   ```
 
 2. Starting a new project
 
-   ```cookiecutter https://github.com/drivendata/cookiecutter-data-science```
+   ```
+   cookiecutter https://github.com/drivendata/cookiecutter-data-science
+   ```
    
 3. Create a virtual environment
 
@@ -26,7 +30,9 @@ title: Data Science Workflow
    
 4. Install all the genearl packages for data science
 
-   ```conda install --file requirements.txt```
+   ```
+   conda install --file requirements.txt
+   ```
    or
    
    ```
@@ -36,5 +42,7 @@ title: Data Science Workflow
    
 5. Open jupyter lab for data exploration and analysis
    
-   ```jupyter lab```
+   ```
+   jupyter lab
+   ```
    
