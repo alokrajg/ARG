@@ -6,7 +6,7 @@ categories: [data_science]
 title: Data Science Workflow
 ---
 # This is the step by step procedure to setup any data science project.
-![ds_project]({{site.baseurl}}/assets/image/ds_project.jpg "")
+![ds_project]({{site.baseurl}}/images/ds_project.jpg "")
 
 ## Basic setup
 1. Install cookiecutter
