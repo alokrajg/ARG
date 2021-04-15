@@ -6,7 +6,7 @@ categories: [data_science]
 title: Data Science Workflow
 ---
 # This is the step by step procedure to setup any data science project.
-![ds_project]({{site.baseurl}}/images/ds_project.jpg "")
+![ds_project]({{site.baseurl}}/images/ds_project.jpg " ")
 
 ## Basic setup
 1. Install cookiecutter
@@ -19,11 +19,20 @@ title: Data Science Workflow
    
 3. Create a virtual environment
 
-   ```pipenv shell```
+   ```
+   conda create -n virtual-env-name python==3.8
+   conda activate virtual-env-name
+   ```
    
 4. Install all the genearl packages for data science
 
-   ```pip install -r requirements.txt```
+   ```conda install --file requirements.txt```
+   or
+   
+   ```
+   conda install pip
+   pip install -r requirements.txt
+   ```
    
 5. Open jupyter lab for data exploration and analysis
    
