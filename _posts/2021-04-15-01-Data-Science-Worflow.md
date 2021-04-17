@@ -29,7 +29,7 @@ title: Data Science Workflow
    conda activate virtual-env-name
    ```
    
-4. Install all the genearl packages for data science
+4. Install all the [general packages](https://gist.github.com/alokrajg/4070069eb7f4253864b494eb91a0d013) for data science
 
    ```
    conda install --file requirements.txt
