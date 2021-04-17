@@ -6,14 +6,14 @@ categories: [data_science]
 image: images/ds_project.jpg
 title: Data Science Workflow
 ---
-# This is the step by step procedure to setup any data science project.
+# Step by step procedure to setup any data science project.
 ![ds_project]({{site.baseurl}}/images/ds_project.jpg " ")
 
 ## Basic setup
 1. Install cookiecutter
 
    ```
-   pip install cookiecutter
+   conda install cookiecutter
    ```
 
 2. Starting a new project
