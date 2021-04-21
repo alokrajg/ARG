@@ -2,6 +2,17 @@
   
     
         "post0": {
+            "title": "Data Preparation",
+            "content": "import numpy as np import pandas as pd . np.random.seed(14) data = {&#39;y&#39;:np.random.randint(0,200, 50), &#39;x&#39;:np.random.randint(0,2000, 50)} . df = pd.DataFrame(data) df.head() . y x . 0 107 | 1359 | . 1 88 | 1705 | . 2 12 | 639 | . 3 150 | 1301 | . 4 71 | 525 | . def series_to_supervised(data, n_in, n_out=1, dropnan=True, col_name=None): n_vars = 1 if type(data) is list else data.shape[1] df = pd.DataFrame(data) cols, names = list(), list() # input sequence (t-n, ... t-1) for j in range(0,n_vars): for i in range(n_in[j], 0, -1): cols.append(df[j].shift(i)) names += [(str(col_name[j]) + &#39; %d(t-%d)&#39; % (j+1, i))] # forecast sequence (t, t+1, ... t+n) for i in range(0, n_out): cols.append(df.shift(-i)) if i == 0: names += [(str(col_name[j]) +&#39; %d(t)&#39; % (j+1)) for j in range(n_vars)] else: names += [(str(col_name[j]) +&#39; %d(t+%d)&#39; % (j+1, i)) for j in range(n_vars)] # put it all together agg = pd.concat(cols, axis=1) agg.columns = names # drop rows with NaN values if dropnan: agg.dropna(inplace=True) return agg, names . n_lag = 2 lag = n_lag*(np.ones(df.shape[1])) lag = list(map(int, lag)) transform_df1 = series_to_supervised(df.values, lag, n_out=2,col_name=df.columns)[0] . transform_df1.head() . y 1(t-2) y 1(t-1) x 2(t-2) x 2(t-1) y 1(t) x 2(t) y 1(t+1) x 2(t+1) . 2 107.0 | 88.0 | 1359.0 | 1705.0 | 12 | 639 | 150.0 | 1301.0 | . 3 88.0 | 12.0 | 1705.0 | 639.0 | 150 | 1301 | 71.0 | 525.0 | . 4 12.0 | 150.0 | 639.0 | 1301.0 | 71 | 525 | 102.0 | 323.0 | . 5 150.0 | 71.0 | 1301.0 | 525.0 | 102 | 323 | 156.0 | 61.0 | . 6 71.0 | 102.0 | 525.0 | 323.0 | 156 | 61 | 138.0 | 330.0 | . def transform_data(df, n_lag=1, n_out=1): lag = n_lag*(np.ones(df.shape[1])) lag = list(map(int, lag)) df1 = series_to_supervised(df.values, lag, n_out=n_out,col_name=df.columns)[0] n_obs = sum(lag) X, y = df1.values[:, :n_obs], df1.values[:, n_obs:] n_features = df.shape[1] y = y[:,n_features*np.arange(n_out)] return X,y . X, y = transform_data(df, n_lag=2, n_out=2) . pd.DataFrame(X).head() . 0 1 2 3 . 0 107.0 | 88.0 | 1359.0 | 1705.0 | . 1 88.0 | 12.0 | 1705.0 | 639.0 | . 2 12.0 | 150.0 | 639.0 | 1301.0 | . 3 150.0 | 71.0 | 1301.0 | 525.0 | . 4 71.0 | 102.0 | 525.0 | 323.0 | . pd.DataFrame(y).head() . 0 1 . 0 12.0 | 150.0 | . 1 150.0 | 71.0 | . 2 71.0 | 102.0 | . 3 102.0 | 156.0 | . 4 156.0 | 138.0 | . Simple Modelling . from sklearn.multioutput import RegressorChain from sklearn.linear_model import LinearRegression from xgboost import XGBRegressor . linear_model = LinearRegression() chain = RegressorChain(base_estimator=linear_model).fit(X, y) prediction_lr = chain.predict(X) . xgb = XGBRegressor() chain = RegressorChain(base_estimator=xgb).fit(X, y) prediction_xgb = chain.predict(X) .",
+            "url": "https://alokrajg.github.io/ARG/2021/04/21/time-series-supervised-transformation.html",
+            "relUrl": "/2021/04/21/time-series-supervised-transformation.html",
+            "date": " • Apr 21, 2021"
+        }
+        
+    
+  
+    
+        ,"post1": {
             "title": "Time Series Analysis",
             "content": "Content . . . You can include info boxes",
             "url": "https://alokrajg.github.io/ARG/time_series/2021/04/18/Time-Series-Analysis.html",
@@ -12,7 +23,7 @@
     
   
     
-        ,"post1": {
+        ,"post2": {
             "title": "Data Science Workflow",
             "content": "Step by step procedure to setup any data science project. . . Basic setup . Install cookiecutter . conda install cookiecutter . | Starting a new project . cookiecutter https://github.com/drivendata/cookiecutter-data-science . | Create a virtual environment . conda create -n virtual-env-name python==3.8 conda activate virtual-env-name . | Install all the general packages for data science . conda install --file requirements.txt . or . conda install pip pip install -r requirements.txt . | Open jupyter lab for data exploration and analysis . jupyter lab . |",
             "url": "https://alokrajg.github.io/ARG/data_science/2021/04/15/01-Data-Science-Worflow.html",
