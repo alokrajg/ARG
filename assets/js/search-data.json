@@ -13,6 +13,17 @@
   
     
         ,"post1": {
+            "title": "Machine Learning",
+            "content": "Content . . Supervised transformation of time series data |",
+            "url": "https://alokrajg.github.io/ARG/time_series/2021/04/21/Machine-Learning.html",
+            "relUrl": "/time_series/2021/04/21/Machine-Learning.html",
+            "date": " • Apr 21, 2021"
+        }
+        
+    
+  
+    
+        ,"post2": {
             "title": "Time Series Analysis",
             "content": "Content . . Supervised transformation of time series data |",
             "url": "https://alokrajg.github.io/ARG/time_series/2021/04/18/Time-Series-Analysis.html",
@@ -23,7 +34,7 @@
     
   
     
-        ,"post2": {
+        ,"post3": {
             "title": "Data Science Workflow",
             "content": "Step by step procedure to setup any data science project. . . Basic setup . Install cookiecutter . conda install cookiecutter . | Starting a new project . cookiecutter https://github.com/drivendata/cookiecutter-data-science . | Create a virtual environment . conda create -n virtual-env-name python==3.8 conda activate virtual-env-name . | Install all the general packages for data science . conda install --file requirements.txt . or . conda install pip pip install -r requirements.txt . | Open jupyter lab for data exploration and analysis . jupyter lab . |",
             "url": "https://alokrajg.github.io/ARG/data_science/2021/04/15/01-Data-Science-Worflow.html",
