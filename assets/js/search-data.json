@@ -68,10 +68,10 @@
   
     
         ,"post6": {
-            "title": "Data Science Workflow",
+            "title": "Data Science Project Environment",
             "content": "Step by step procedure to setup any data science project. . . Basic setup . Install cookiecutter . conda install cookiecutter . | Starting a new project . cookiecutter https://github.com/drivendata/cookiecutter-data-science . | Create a virtual environment . conda create -n virtual-env-name python==3.8 conda activate virtual-env-name . | Install all the general packages for data science . conda install --file requirements.txt . or . conda install pip pip install -r requirements.txt . | Open jupyter lab for data exploration and analysis . jupyter lab . |",
-            "url": "https://alokrajg.github.io/ARG/data_science/2021/04/15/01-Data-Science-Worflow.html",
-            "relUrl": "/data_science/2021/04/15/01-Data-Science-Worflow.html",
+            "url": "https://alokrajg.github.io/ARG/data_science/2021/04/15/01-Data-Science-Environment.html",
+            "relUrl": "/data_science/2021/04/15/01-Data-Science-Environment.html",
             "date": " • Apr 15, 2021"
         }
         
