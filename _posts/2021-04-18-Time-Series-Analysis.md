@@ -5,6 +5,7 @@ description: In this series of blogs, I will go through all the components of do
 categories: [time_series]
 image: images/chart-preview.png
 title: Time Series Analysis
+sticky_rank: 1
 ---
 # Content
 ![chart-preview]({{site.baseurl}}/images/chart-preview.png " ")
