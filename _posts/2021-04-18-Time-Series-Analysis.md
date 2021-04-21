@@ -9,4 +9,5 @@ title: Time Series Analysis
 # Content
 ![chart-preview]({{site.baseurl}}/images/chart-preview.png " ")
 
-{% include info.html text="You can include info boxes" %}
+1. [Supervised transformation of time series data](https://github.com/fastai/fastpages)
+
