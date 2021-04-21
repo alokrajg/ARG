@@ -7,6 +7,7 @@ image: images/chart-preview.png
 title: Time Series Analysis
 sticky_rank: 1
 ---
+
 # Content
 ![chart-preview]({{site.baseurl}}/images/chart-preview.png " ")
 
