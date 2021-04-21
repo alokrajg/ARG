@@ -2,9 +2,9 @@
 toc: true
 layout: post
 description: In this series of blogs, I will go through all the components of doing time series analysis.
-categories: [time_series]
+categories: [nlp]
 image: images/chart-preview.png
-title: Natural Language Processing (NLP)
+title: Natural Language Processing
 sticky_rank: 4
 ---
 # Content
