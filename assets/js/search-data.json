@@ -13,6 +13,17 @@
   
     
         ,"post1": {
+            "title": "Time Series Analysis",
+            "content": "Content . . Supervised transformation of time series data |",
+            "url": "https://alokrajg.github.io/ARG/time_series/2021/04/21/Time-Series-Analysis.html",
+            "relUrl": "/time_series/2021/04/21/Time-Series-Analysis.html",
+            "date": " • Apr 21, 2021"
+        }
+        
+    
+  
+    
+        ,"post2": {
             "title": "Natural Language Processing",
             "content": "Content . . Supervised transformation of time series data |",
             "url": "https://alokrajg.github.io/ARG/nlp/2021/04/21/Natural-Language-Processing.html",
@@ -23,7 +34,7 @@
     
   
     
-        ,"post2": {
+        ,"post3": {
             "title": "Machine Learning",
             "content": "Content . . Supervised transformation of time series data |",
             "url": "https://alokrajg.github.io/ARG/time_series/2021/04/21/Machine-Learning.html",
@@ -34,7 +45,7 @@
     
   
     
-        ,"post3": {
+        ,"post4": {
             "title": "Data Science",
             "content": "Content . . Data Science Project Environment |",
             "url": "https://alokrajg.github.io/ARG/data_science/2021/04/21/Data-Science.html",
@@ -45,23 +56,12 @@
     
   
     
-        ,"post4": {
+        ,"post5": {
             "title": "Computer Vision",
             "content": "Content . . Supervised transformation of time series data |",
             "url": "https://alokrajg.github.io/ARG/computer_vision/2021/04/21/Computer-Vision.html",
             "relUrl": "/computer_vision/2021/04/21/Computer-Vision.html",
             "date": " • Apr 21, 2021"
-        }
-        
-    
-  
-    
-        ,"post5": {
-            "title": "Time Series Analysis",
-            "content": "Content . . Supervised transformation of time series data |",
-            "url": "https://alokrajg.github.io/ARG/time_series/2021/04/18/Time-Series-Analysis.html",
-            "relUrl": "/time_series/2021/04/18/Time-Series-Analysis.html",
-            "date": " • Apr 18, 2021"
         }
         
     
