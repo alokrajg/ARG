@@ -9,5 +9,5 @@ title: Time Series Analysis
 # Content
 ![chart-preview]({{site.baseurl}}/images/chart-preview.png " ")
 
-1. [Supervised transformation of time series data](https://github.com/fastai/fastpages)
+1. [Supervised transformation of time series data](https://alokrajg.github.io/ARG/2021/04/21/time-series-supervised-transformation.html)
 
