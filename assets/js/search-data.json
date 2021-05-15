@@ -83,6 +83,17 @@
 
   
       ,"page1": {
+          "title": "ML",
+          "content": "This website is powered by fastpages 1. . a blogging platform that natively supports Jupyter notebooks in addition to other formats. &#8617; . |",
+          "url": "https://alokrajg.github.io/ARG/ML/",
+          "relUrl": "/ML/",
+          "date": ""
+      }
+      
+  
+
+  
+      ,"page2": {
           "title": "About Me",
           "content": "This website is powered by fastpages 1. . a blogging platform that natively supports Jupyter notebooks in addition to other formats. &#8617; . |",
           "url": "https://alokrajg.github.io/ARG/about/",
@@ -116,7 +127,7 @@
   
 
   
-      ,"page11": {
+      ,"page12": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://alokrajg.github.io/ARG/robots.txt",
